@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<title>квадрат под колёсами</title>
+<style>
+    .wheel {
+     width: 10px; 
+     height: 10px;  
+     border: 10px solid rgb(0, 0, 0);
+     border-radius: 50%;
+     position: fixed; 
+     }   
+     .back-wheel{
+        left: 100px;
+        top: 200px;
+     }     
+    
+    .wheel2 {
+     width: 10px; 
+     height: 10px;  
+     border: 10px solid rgb(0, 0, 0);
+     border-radius: 50%;
+     position: fixed;  
+    }
+    .front-wheel{
+        left: 190px;
+        top: 200px
+    }
+    
+    .body{
+        width: 130px;
+        height: 8px;
+        background-color: blue;
+        position: fixed;
+        top: 200px;
+        left: 95px;
+    }
+    .body2{
+        width: 130px;
+        height: 8px;
+        background-color: blue;
+        position: fixed;
+        top: 170px;
+        left: 95px;
+    }
+    .body3{
+        width: 8px;
+        height: 35px;
+        background-color: blue;
+        position: fixed;
+        top: 175px;
+        left: 95px;  
+    }
+    .body4{
+        width: 8px;
+        height: 35px;
+        background-color: blue;
+        position: fixed;
+        top: 175px;
+        left: 217px;  
+    }
+    .topbody{
+        width: 8px;
+        height: 40px;
+        background-color: blue;
+        position: fixed;
+        top: 130px;
+        left: 125px;  
+    }
+    .topbody2{
+        width: 8px;
+        height: 40px;
+        background-color: blue;
+        position: fixed;
+        top: 130px;
+        left: 175px;  
+    }
+    .topbody3{
+        width: 50px;
+        height: 8px;
+        background-color: blue;
+        position: fixed;
+        top: 130px;
+        left: 125px;  
+    }
+    .light{
+        width: 10px;
+        height: 8px;
+        background-color:yellow;
+        position: fixed;
+        top: 200px;
+        left: 220px;
+    }
+    .road{
+        width: 3000px;
+        height: 8px;
+        background-color: rgb(30, 30, 44);
+        position: fixed;
+        top: 230px;
+        left: 0px;
+    }
+    .move
+    {
+        animation: 5s infinite ease-in-out move;
+    }
+   
+
+    @keyframes move {
+            from {
+                transform: translateX(0);
+            }
+            to {
+                transform: translateX(1200px);
+                
+            }
+        }
+        
+    
+</style>
+</head>
+<body>
+    <div class="wheel back-wheel move"></div>
+    <div class="wheel2 front-wheel move"></div>
+    <div class="body move"></div>
+    <div class="body2 move"></div>
+    <div class="body3 move"></div>
+    <div class="body4 move"></div>
+    <div class="topbody move"></div>
+    <div class="topbody2 move"></div>
+    <div class="topbody3 move"></div>
+    <div class="light move"></div>
+    <div class="road"></div>
+</body>
+</html>
